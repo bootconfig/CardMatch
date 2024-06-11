@@ -1,15 +1,15 @@
 public class App {
 
-    static int add(int x, int y) {
-        return x + y;
-    }
-
-    static void print() {
-        System.out.print("hi");
+    static void print(int a) {
+        System.out.print(a);
     }
     public static void main(String[] args) throws Exception {
         System.out.println("I Love Jesus!");
         System.out.println("programming is fun");
-        System.out.println(add(1, 1));
+
+        print(Math.add(1, 1));
+        print(Math.subtract(1, 1));
+        print(Math.multiply(1, 1));
+        print(Math.divide(1, 1));
     }
 }
