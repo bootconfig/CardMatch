@@ -1,33 +1,13 @@
 # CardMatch
 
-CardMatch is an entertaining program designed to be a fun card matching game.
+CardMatch is an entertaining program designed to be a fun card matching game.  Beginner, moderate, and Advanced options allow the user to select the dificulty level (the number of cards on the board).
 
-## Development Environment Setup 
+## How to Play
 
->[!TIP]
->These instruction are specifically written for Debian, Ubuntu or Linux Mint operating systems with VSCode as the IDE.  However, the general concepts should help with development on other systems and tools.
+   Step 1: Download the zip folder and unzip it onto your computer.
 
----
-- [x] Install and/or check development dependency ***Java (OpenJDK)*** 
-  
-    ```
-    sudo apt install default-jdk
-    java -version
-    ```  
+   Step 2: Navigate into the unzipped folder and click the ***index.html***.
 
-- [x] Download and install ***VSCode***
-    >[Visual Studio Code on Linux](https://code.visualstudio.com/docs/setup/linux)
-
-- [x] Install the VSCode extension ***Extension Pack for Java***
-    >[Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
-
-- [x] Clone repository
-    ```
-    git clone https://github.com/bootconfig/CardMatch.git
-    ```
-
-- [x] Open folder ***CardMatch*** as VSCode workspace
-  
 ---
 
 ## Happy Coding! 🙂

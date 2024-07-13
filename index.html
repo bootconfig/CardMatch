@@ -6,22 +6,28 @@
         <link rel ="stylesheet" href="style.css">
         <title>Card Match</title>
     </head>
-    <header>
-        <button title="Create a new game">New Game</button>
-        <button title="Restart current game">Restart</button>
-        <button title="Settings">Settings</button>
-    </header>
     <body>
-        <p id="_id"></p>
-        <my-card face="./images/square.png" back="./images/backingBlue.png" status="down"></my-card>
-        <my-card face="./images/square.png" back="./images/backingBlue.png" status="down"></my-card>
-        <my-card face="./images/circle.png" back="./images/backingBlue.png" status="down"></my-card>
-        <my-card face="./images/circle.png" back="./images/backingBlue.png" status="down"></my-card>
-        <my-card face="./images/free.png" back="./images/backingBlue.png" status="up"></my-card>
-        <my-card face="./images/triangle.png" back="./images/backingBlue.png" status="down"></my-card>
-        <my-card face="./images/triangle.png" back="./images/backingBlue.png" status="down"></my-card>
-        <my-card face="./images/pentagone.png" back="./images/backingBlue.png" status="down"></my-card>
-        <my-card face="./images/pentagone.png" back="./images/backingBlue.png" status="down"></my-card>
-    </body>
+        <button class="button" title="Create a new game">New Game</button>
+        <button class="button" title="Restart current game">Restart</button>
+        <button class="button" title="Settings">Settings</button>
+        
+        <select class="button">
+            <option>Beginner</option>
+            <option>Moderate</option>
+            <option>Advanced</option>
+        </select>
+        
+        <div>
+            <my-card face="./images/square.png" back="./images/backingBlue.png"></my-card>
+            <my-card face="./images/square.png" back="./images/backingBlue.png"></my-card>
+            <my-card face="./images/circle.png" back="./images/backingBlue.png"></my-card>
+            <my-card face="./images/circle.png" back="./images/backingBlue.png"></my-card>
+            <my-card face="./images/free.png" back="./images/backingBlue.png"></my-card>
+            <my-card face="./images/triangle.png" back="./images/backingBlue.png"></my-card>
+            <my-card face="./images/triangle.png" back="./images/backingBlue.png"></my-card>
+            <my-card face="./images/pentagone.png" back="./images/backingBlue.png"></my-card>
+            <my-card face="./images/pentagone.png" back="./images/backingBlue.png"></my-card>
+        </div>
+     </body>
     <script type="module" src="index.js"></script>
 </html>
