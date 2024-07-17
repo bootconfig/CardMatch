@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="125.6"
+   height="125.40001"
+   version="1.1"
+   id="svg47"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs51">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter2739"
+       x="-0.038593482"
+       y="-0.038659792"
+       width="1.0771869"
+       height="1.0773196">
+      <feColorMatrix
+         type="hueRotate"
+         values="127"
+         result="color1"
+         id="feColorMatrix2735" />
+      <feColorMatrix
+         type="saturate"
+         values="0"
+         result="color2"
+         id="feColorMatrix2737" />
+    </filter>
+  </defs>
+  <g
+     id="g45"
+     transform="translate(-0.65956026,-0.76416028)">
+    <title
+       id="title41">Layer 1</title>
+    <rect
+       stroke="#303c9b"
+       rx="30"
+       id="svg_1"
+       height="116.4"
+       width="116.6"
+       y="5.2641602"
+       x="5.1595602"
+       stroke-width="9"
+       fill="#b2b2ff"
+       style="filter:url(#filter2739)" />
+    <text
+       xml:space="preserve"
+       text-anchor="start"
+       font-family="Kreon"
+       font-size="80px"
+       id="svg_2"
+       y="89"
+       x="46.898628"
+       stroke-width="0"
+       stroke="#303c9b"
+       fill="#000000">?</text>
+  </g>
+</svg>
