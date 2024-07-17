@@ -1,8 +1,8 @@
-<svg width="126.91913" height="126.92832" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg width="126.91913" height="126.92832000000001" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <g>
   <title>Layer 1</title>
-  <rect stroke="#00bf5f" rx="9" id="svg_3" height="47.82595" width="118.6953" y="36" x="3.89453" stroke-width="6" fill="#56ffaa"/>
-  <text stroke-width="0" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Kreon'" font-size="60" id="svg_1" y="79" x="9.03208" stroke="#00bf5f" fill="#000000">Free</text>
+  <rect stroke="#00bf5f" rx="23" id="svg_2" height="120.22989" width="120.10345" y="3.34922" x="3.40784" stroke-width="6" fill="#56ffaa"/>
+  <text font-style="italic" stroke-width="0" fill="#000000" stroke="#00bf5f" x="22.32069" y="75" id="svg_1" font-size="44" font-family="'Kreon'" text-anchor="start" xml:space="preserve" font-weight="normal">Free</text>
  </g>
 
 </svg>

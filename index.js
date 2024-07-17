@@ -2,11 +2,11 @@ import {Card} from "./components/card.js"; // imports the Card class from card.j
 
 customElements.define("my-card", Card);
 
-let square = "./images/square.png";
-let circle = "./images/circle.png";
-let triangle = "./images/triangle.png";
-let pentagone = "./images/pentagone.png";
-let free = "./images/free.png";
+let square = "./images/square.svg";
+let circle = "./images/circle.svg";
+let triangle = "./images/triangle.svg";
+let pentagone = "./images/pentagone.svg";
+let free = "./images/free.svg";
 
 const paths = [square, square, circle, circle, triangle, triangle, pentagone, pentagone, free]
 
