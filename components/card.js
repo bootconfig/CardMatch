@@ -12,8 +12,8 @@ export class Card extends HTMLElement {
         padding-bottom: 0px;
         cursor: pointer;
         text-align: left;
-        width: 192px;
-        height: 192px;
+        width: 125px;
+        height: 125;
     }
 
     .img {
