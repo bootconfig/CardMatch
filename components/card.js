@@ -2,42 +2,34 @@ export class Card extends HTMLElement {
 
     css = `
     .button {
+        display: block;
         border-width: 0px;
         border-radius: 8px;
-        margin: 0px;
-        padding: 0px;
+        margin: 4px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
         cursor: pointer;
+        text-align: left;
+        width: 192px;
+        height: 192px;
     }
 
     .img {
         display: block;
-        
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    .span {
-        display: block;
-        padding: 4px;
-        text-align:left;
     }`;
         
     template = () => `
     <button class="button">
-        <img class="img" src="${this.image}" width="256px" height="256px">
-        <!--<span class="span">Name: Circle </span>-->
-        <!--<span class="span">Value: 20pts</span>-->
-    </button>   
+        <img class="img" src="${this.image}">
+        <slot></slot>
+    </button>
     `;
     
     constructor() {
         super();
-
-        this.face = this.getAttribute("face");
-        this.back = this.getAttribute("back");
-        this.image = this.back;
-
         this.attachShadow({mode: "open"});
-        this.render();
     }
 
     render() {
@@ -49,6 +41,28 @@ export class Card extends HTMLElement {
         this.shadowRoot.querySelector(".button").addEventListener("click", this.flip);
     }
 
+    connectedCallback() {
+        this.face = this.getAttribute('face');
+        this.back = this.getAttribute('back');
+        this.image = this.back;
+        this.text = this.innerHTML;
+        this.render();
+    }
+
+    attributeChangedCallback(attributeName, oldVal, newVal) {
+        if (attributeName == 'face') {
+            this.face = newVal;
+        }
+
+        if (attributeName == 'back') {
+            this.back = newVal;
+        }
+    }
+
+    static get observedAttributes() {
+        return ["face", "back"];
+    }
+
     flip = () => {
         if (this.image == this.face) {
             this.image = this.back;
@@ -58,5 +72,6 @@ export class Card extends HTMLElement {
         }
 
         this.render();
+        console.log();
     }
 }

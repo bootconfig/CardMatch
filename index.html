@@ -7,6 +7,10 @@
         <title>Card Match</title>
     </head>
     <body>
+        <div>
+            <p id="time"></p>
+        </div>
+        
         <button class="button" title="Create a new game">New Game</button>
         <button class="button" title="Restart current game">Restart</button>
         <button class="button" title="Settings">Settings</button>
@@ -17,17 +21,25 @@
             <option>Advanced</option>
         </select>
         
-        <div>
-            <my-card face="./images/square.png" back="./images/backingBlue.png"></my-card>
-            <my-card face="./images/square.png" back="./images/backingBlue.png"></my-card>
-            <my-card face="./images/circle.png" back="./images/backingBlue.png"></my-card>
-            <my-card face="./images/circle.png" back="./images/backingBlue.png"></my-card>
-            <my-card face="./images/free.png" back="./images/backingBlue.png"></my-card>
-            <my-card face="./images/triangle.png" back="./images/backingBlue.png"></my-card>
-            <my-card face="./images/triangle.png" back="./images/backingBlue.png"></my-card>
-            <my-card face="./images/pentagone.png" back="./images/backingBlue.png"></my-card>
-            <my-card face="./images/pentagone.png" back="./images/backingBlue.png"></my-card>
+        <my-score>Score:</my-score>
+        
+        <div class="board" id="row1">
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
+        </div>
+        <div class="board" id="row2">        
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
+        </div>
+        <div class="board" id="row3">
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
+            <my-card face="./images/square.svg" back="./images/back.svg"></my-card>
         </div>
      </body>
-    <script type="module" src="index.js"></script>
+    
+     <script type="module" src="index.js"></script>
+     <script src="time.js"></script>
 </html>
