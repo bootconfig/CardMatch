@@ -1,23 +1,23 @@
-export class Card extends HTMLElement {
+export default class Card extends HTMLElement {
 
     css = `
     .button {
         display: block;
         border-width: 0px;
         border-radius: 8px;
-        margin: 4px;
         padding-top: 0px;
         padding-right: 0px;
         padding-left: 0px;
         padding-bottom: 0px;
         cursor: pointer;
-        text-align: left;
         width: 125px;
-        height: 125;
+        height: 125px;
     }
 
     .img {
         display: block;
+        width: 125px;
+        height: 125px;
     }`;
         
     template = () => `
@@ -39,6 +39,7 @@ export class Card extends HTMLElement {
         `;
 
         this.shadowRoot.querySelector(".button").addEventListener("click", this.flip);
+        console.log(this.getAttribute('face'));
     }
 
     connectedCallback() {
@@ -72,6 +73,5 @@ export class Card extends HTMLElement {
         }
 
         this.render();
-        console.log();
     }
 }

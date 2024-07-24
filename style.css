@@ -1,8 +1,14 @@
 
 body {
     background-color: green;
-    justify-content: center;
+    margin: 0px;
 }
+
+.rootBoard {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    }
 
 .board {
     display: flex;
@@ -12,11 +18,6 @@ body {
 
 p {
     display: inline;
-}
-
-div {
-    display: block;
-    margin: 0px;   
 }
 
 .button {
@@ -31,10 +32,9 @@ div {
     background-color: rgb(64, 64 ,64);
 }
 
-.flexbox-container {
-    height: 600px;
-    display: flex;
+.grid-board-container {
+    display: grid;
+    grid-template-columns: repeat(3, 125px);
     justify-content: center;
-    align-items: center;
-    background-color: yellow;
+    gap: 16px;
 }
